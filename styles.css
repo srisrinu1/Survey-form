@@ -112,8 +112,8 @@ label {
 }
 
 .form-group {
-    margin: 0 auto 1.25rem auto;
     padding: 0.25rem;
+    margin: 0 auto 1.25rem auto;
 }
 
 .input-radio,
@@ -138,9 +138,9 @@ label {
 }
 
 .form-control:focus {
-    border: #13e0be;
+    border: #13e024;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 255, 13, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(25, 0, 255, 0.25);
 }
 
 .input-textarea {
@@ -173,6 +173,6 @@ label {
 }
 
 .form-group .questions {
-    pading: 5;
+    pading: 0;
     text-align: left;
 }
