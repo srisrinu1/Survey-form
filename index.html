@@ -8,18 +8,146 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Survey Form</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
-<body>
+
+<body class="text-center">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+        </header>
 
-    <script src="" async defer></script>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name
+                </label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="Email">Email
+                </label>
+                <input type="text" id="email" name="Email" class="form-control" placeholder="Enter your Email" required>
+
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="Age">Age <span class="clue">(optional)</span>
+                </label>
+                <input type="number" id="number" name="age" min="10" max="99" class="form-control" placeholder="Age">
+
+            </div>
+            <div class="form-group">
+                <p class="questions">Which option best describes your current role?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>selected value</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <p class="questions">Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                    <input
+                      name="user-recommend"
+                      value="definitely"
+                      type="radio"
+                      class="input-radio"
+                      checked
+                    />Definitely</label
+                  >
+                <label>
+                    <input
+                      name="user-recommend"
+                      value="maybe"
+                      type="radio"
+                      class="input-radio"
+                    />Maybe</label
+                  >
+                  <label>
+                    <input
+                      name="user-recommend"
+                      value="notsure"
+                      type="radio"
+                      class="input-radio"
+                    />Not sure</label
+                  >
+
+            </div>
+            <div class="form-group">
+                <p class="questions">
+                    What is your favorite feature of freeCodeCamp?
+                  </p>
+                  <select name="most-like" id="most-like" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">OpenSource</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                <p class="questions">
+                    What would you like to see improved?
+                    <span class="clue">(Check all that apply)</span></p>
+    
+        <label><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Front-end Projects</label
+      >
+      <label><input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Back-end Projects</label>
+                <label>
+          <input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox">Data Visualization</label>
+                <label>
+                <input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Challenges</label>
+                <label>
+                <input name="prefer" value="Open-Source-Community" type="checkbox" class="input-checkbox" />Open Source Community</label>
+                <label>
+                <input name="prefer" value="Gitter-help-rooms" type="checkbox" class="input-checkbox" />Gitter help rooms</label>
+                <label>
+                <input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Videos</label>
+                <label>
+                <input name="prefer" value="City-Meetups" type="checkbox" class="input-checkbox" />City Meetups</label>
+                <label>
+                <input name="prefer" value="Wiki" type="checkbox" class="input-checkbox">Wiki</label>
+                <label>
+                <input name="prefer" value="Forum" type="checkbox" class="input-checkbox" />Forum</label>
+                <label>
+                    <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional Courses</label>
+                <div class="form-group">
+                    <p class="questions">Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Submit</button> </div>
+
+        </form>
+        </div>
+
+        <script src=" " async defer></script>
 </body>
 
 </html>
