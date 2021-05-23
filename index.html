@@ -39,6 +39,12 @@
 
             </div>
             <div class="form-group">
+                <label id="Ph-label" for="Email">Phone
+              </label>
+                <input type="tel" id="Phone" name="Phone" class="form-control" placeholder="Enter your Phone number" required>
+
+            </div>
+            <div class="form-group">
                 <label id="number-label" for="Age">Age <span class="clue">(optional)</span>
                 </label>
                 <input type="number" id="number" name="age" min="10" max="99" class="form-control" placeholder="Age">
@@ -137,10 +143,18 @@
                 <label>
                     <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional Courses</label>
                 <div class="form-group">
+                    <div class="file">
+                        Select your resume to upload:<br>
+                        <input type="file" id="myFile" name="filename"><br>
+                        <input type="submit">
+                    </div>
+                </div>
+                <div class="form-group">
                     <p class="questions">Any comments or suggestions?</p>
                     <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
 
                 </div>
+
                 <div class="form-group">
                     <button type="submit" id="submit" class="submit-button">Submit</button> </div>
 
